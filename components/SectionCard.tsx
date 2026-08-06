@@ -2,24 +2,29 @@ import { ReactNode } from 'react';
 
 type SectionCardProps = {
   title: string;
-  eyebrow?: string;
   children: ReactNode;
   className?: string;
+  frosted?: boolean;
 };
 
-export default function SectionCard({ title, eyebrow, children, className = '' }: SectionCardProps) {
+export default function SectionCard({
+  title,
+  children,
+  className = '',
+  frosted = false,
+}: SectionCardProps) {
   return (
-    <section className={`card rounded-[28px] p-5 md:p-6 ${className}`}>
-      {(eyebrow || title) && (
-        <div className="mb-5 flex items-center justify-between gap-4">
-          <div>
-            {eyebrow ? (
-              <p className="panel-title text-[11px] uppercase text-sky-200/65">{eyebrow}</p>
-            ) : null}
-            <h2 className="mt-1 text-xl font-semibold text-slate-50">{title}</h2>
-          </div>
-        </div>
-      )}
+    <section
+      className={
+        frosted
+          ? `frosted-section ${className}`
+          : `interface-section ${className}`
+      }
+    >
+      <h2 className="font-display mb-5 text-3xl leading-none text-white md:text-4xl">
+        {title}
+      </h2>
+
       {children}
     </section>
   );
