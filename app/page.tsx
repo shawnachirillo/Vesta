@@ -19,15 +19,15 @@ export default function HomePage() {
             </p>
 
             <h1 className="font-display mt-5 max-w-[820px] text-6xl leading-[0.94] tracking-[-0.035em] text-white md:text-7xl xl:text-[88px]">
-              Your home,
+              Our home,
               <br />
               in rhythm.
             </h1>
 
-            <p className="mt-7 max-w-[620px] text-base leading-7 text-white/72 md:text-lg">
+            {/* <p className="mt-7 max-w-[620px] text-base leading-7 text-white/72 md:text-lg">
               Keep the day visible, reduce friction, and guide the
               household into what comes next.
-            </p>
+            </p> */}
           </div>
 
           <div className="grid gap-3">

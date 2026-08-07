@@ -9,12 +9,13 @@ const navItems = [
   { href: '/routines', label: 'Routines' },
   { href: '/library', label: 'Library' },
   { href: '/notes', label: 'Notes' },
-  { href: '/settings', label: 'Settings' },
-];
+    { href: '/settings', label: 'Settings' },
+  ];
 
 export default function NavShell({
   children,
 }: {
+  
   children: ReactNode;
 }) {
   return (

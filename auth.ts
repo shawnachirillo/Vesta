@@ -88,6 +88,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             'email',
             'profile',
             'https://www.googleapis.com/auth/calendar.readonly',
+            'https://www.googleapis.com/auth/calendar.events',
           ].join(' '),
 
           access_type: 'offline',
